@@ -1,0 +1,12 @@
+{
+  "header": {
+    "title": "Kairos",
+    "connection": "Se connecter",
+    "preferences": "Préférences"
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "contact": "Contact",
+    "version": "KAIROS v0.1.0"
+  }
+}
