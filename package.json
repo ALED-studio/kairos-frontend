@@ -12,9 +12,11 @@
     "prettier": "pnpm exec prettier . --write"
   },
   "dependencies": {
+    "i18next": "^26.0.3",
     "lucide-react": "^1.7.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-i18next": "^17.0.2",
     "react-router": "^7.13.1"
   },
   "devDependencies": {

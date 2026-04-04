@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "profile": "Profil",
+    "preferences": "Préférences"
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "contact": "Contact"
+  },
+  "actions": {
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "back": "Retour"
+  }
+}
