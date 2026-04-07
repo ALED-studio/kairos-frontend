@@ -1,94 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Alegreya:ital,wght@0,400;0,500;1,400&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-background:     #0A0A0A;
-  --color-surface:        #151515;
-  --color-surface-raised: #1F1F1F;
-  --color-border:         #2e2c3e;
-  --color-border-focus:   #4a4870;
+  --color-surface: #141414;
+  --color-surface-raised: #1f1f1f;
+  --color-on-surface: #ccdae0;
+  --color-on-surface-accent: #ffffff;
+  --color-on-surface-muted: #81a2b1;
 
-  --color-text:           #d4d2e0;
-  --color-text-muted:     #8e8caa;
-  --color-text-faint:     #4a4866;
-  --color-title:          #ffffff;
-  --color-subtitle:       #B6C8A9;
-  --color-accent:           #FFD6E0;
+  --color-border: #4c5757;
+  --color-border-focus: #687878;
 
-  --color-primary:        #5D2E8C;
-  --color-primary-hover:  #7A3CB9;
-  --color-primary-muted:  #3D1E5C;
+  --color-primary: #a78925;
+  --color-primary-hover: #c9a42c;
+  --color-on-primary: #ffffff;
 
-  --color-secondary:      #2E578A;
-  --color-secondary-hover:  #3D74B8;
-  --color-secondary-muted:  #1F3A5C;
+  --color-secondary: #52297a;
+  --color-secondary-hover: #7038a8;
+  --color-on-secondary: #ffffff;
 
-  --color-tertiary:      #8A3305;
-  --color-tertiary-hover:  #C54A07;
-  --color-tertiary-muted:  #4F1D03;
+  --color-success: #06755b;
+  --color-success-muted: #022c22;
+  --color-on-success: #ffffff;
 
-  --color-success:        #06755B;
-  --color-success-muted:  #022c22;
-
-  --color-danger:         #7D1212;
-  --color-danger-muted:   #450a0a;
-
-  --color-warning:        #AE950A;
-  --color-warning-muted:  #746307;
+  --color-danger: #7d1212;
+  --color-danger-muted: #450a0a;
+  --color-on-danger: #ffffff;
 
   --font-display: 'Caesar Dressing', Georgia, serif;
-  --font-body:    'EB Garamond', Georgia, serif;
-  --font-accent:  'Alegreya', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-accent: 'Alegreya', Georgia, serif;
 }
 
 @layer base {
   html {
-    @apply bg-background text-text font-body antialiased;
+    @apply bg-surface text-on-surface font-body antialiased;
   }
 
-  h1 { @apply font-display text-title; }
-  h2, h3 { @apply font-body font-semibold text-text; }
-  h4 { @apply font-accent italic text-subtitle; }
+  h1 {
+    @apply font-display text-on-surface-accent;
+  }
+  h2,
+  h3 {
+    @apply font-body font-semibold text-on-surface;
+  }
+  h4 {
+    @apply font-accent italic text-on-surface;
+  }
 
-  ::-webkit-scrollbar       { @apply w-1.5; }
-  ::-webkit-scrollbar-track { @apply bg-surface; }
-  ::-webkit-scrollbar-thumb { @apply bg-border-focus rounded-full; }
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border-focus rounded-full;
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2
+    @apply inline-flex items-center justify-center gap-2 cursor-pointer
            px-5 py-2 rounded-md font-body font-semibold text-base
-           bg-primary text-white
-           hover:bg-primary-hover
+           bg-primary text-on-primary hover:bg-primary-hover
            transition-colors duration-150
            disabled:opacity-40 disabled:cursor-not-allowed;
   }
-  
+
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2
+    @apply inline-flex items-center justify-center gap-2 cursor-pointer
            px-5 py-2 rounded-md font-body font-semibold text-base
-           bg-secondary text-white
-           hover:bg-secondary-hover
-           transition-colors duration-150
-           disabled:opacity-40 disabled:cursor-not-allowed;
-  }
-  
-  .btn-tertiary {
-    @apply inline-flex items-center justify-center gap-2
-           px-5 py-2 rounded-md font-body font-semibold text-base
-           bg-tertiary text-white
-           hover:bg-tertiary-hover
+           bg-secondary text-on-secondary hover:bg-secondary-hover
            transition-colors duration-150
            disabled:opacity-40 disabled:cursor-not-allowed;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2
+    @apply inline-flex items-center justify-center gap-2 cursor-pointer
            px-5 py-2 rounded-md font-body text-base
-           border border-border text-text-muted
-           hover:border-border-focus hover:text-text
-           transition-colors duration-150;
+            text-on-surface hover:text-on-surface-accent
+            hover:bg-surface-raised
+           transition-colors duration-150 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary-ghost {
+    @apply inline-flex items-center justify-center gap-2 cursor-pointer
+           px-5 py-2 rounded-md font-body font-semibold text-base
+           bg-surface-raised text-primary border border-primary
+           hover:bg-primary hover:text-on-primary
+           transition-colors duration-150
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary-ghost {
+    @apply inline-flex items-center justify-center gap-2 cursor-pointer
+           px-5 py-2 rounded-md font-body font-semibold text-base
+           bg-surface-raised text-secondary border border-secondary
+           hover:bg-secondary hover:text-on-secondary
+           transition-colors duration-150
+           disabled:opacity-40 disabled:cursor-not-allowed;
   }
 
   .card {
@@ -96,12 +107,18 @@
            hover:border-border-focus transition-colors duration-200;
   }
 
-  .badge-primary { @apply text-xs px-2 py-0.5 rounded font-accent bg-primary-muted text-primary border border-primary/30; }
-  .badge-secondary { @apply text-xs px-2 py-0.5 rounded font-accent bg-secondary-muted text-secondary border border-secondary/30; }
-  .badge-tertiary { @apply text-xs px-2 py-0.5 rounded font-accent bg-tertiary-muted text-tertiary border border-tertiary/30; }
-  .badge-success { @apply text-xs px-2 py-0.5 rounded font-accent bg-success-muted text-success border border-success/30; }
-  .badge-danger  { @apply text-xs px-2 py-0.5 rounded font-accent bg-danger-muted  text-danger  border border-danger/30; }
-  .badge-warning { @apply text-xs px-2 py-0.5 rounded font-accent bg-warning-muted text-warning border border-warning/30; }
+  .badge-primary {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-primary text-on-primary border border-primary/30;
+  }
+  .badge-secondary {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-secondary text-on-secondary border border-secondary/30;
+  }
+  .badge-success {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-success text-on-success border border-success/30;
+  }
+  .badge-danger {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-danger text-on-danger  border border-danger/30;
+  }
 
   .divider {
     @apply h-px bg-linear-to-r from-transparent via-border-focus to-transparent;
