@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 import { toast } from 'sonner'
 
-export default function Header() {
+export default function HomeHeader() {
   const { t } = useTranslation()
 
   return (

@@ -1,82 +1,40 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import PageWrapper from './features/layout/PageWrapper'
-import HomePage from './features/home/HomePage'
-import NotFoundPage from './features/error/NotFoundPage'
+import HomePage from '@/features/home/HomePage'
+import NotFoundPage from '@/features/error/NotFoundPage'
+import HomeLayout from '@/features/home/HomeLayout'
 
-const LobbyPage = () => <div className="text-text  bg-background">Lobby</div>
-const ShopPage = () => <div className="text-text  bg-background">Shop</div>
-const TutorialPage = () => (
-  <div className="text-text  bg-background">Tutorial</div>
-)
 const EncyclopediaPage = () => (
   <div className="text-text  bg-background">Encyclopedia</div>
 )
 const CombatPage = () => <div className="text-text  bg-background">Combat</div>
-const ResultPage = () => <div className="text-text  bg-background">Result</div>
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <PageWrapper>
+      <HomeLayout>
         <HomePage />
-      </PageWrapper>
-    ),
-  },
-  {
-    path: '/lobby',
-    element: (
-      <PageWrapper>
-        <LobbyPage />
-      </PageWrapper>
-    ),
-  },
-  {
-    path: '/shop',
-    element: (
-      <PageWrapper>
-        <ShopPage />
-      </PageWrapper>
-    ),
-  },
-  {
-    path: '/tutorial',
-    element: (
-      <PageWrapper>
-        <TutorialPage />
-      </PageWrapper>
+      </HomeLayout>
     ),
   },
   {
     path: '/encyclopedia',
     element: (
-      <PageWrapper>
+      <HomeLayout>
         <EncyclopediaPage />
-      </PageWrapper>
+      </HomeLayout>
     ),
   },
   {
     path: '/combat/:gameId',
-    element: (
-      <PageWrapper className="py-0 px-0 max-w-none">
-        <CombatPage />
-      </PageWrapper>
-    ),
-  },
-  {
-    path: '/result/:gameId',
-    element: (
-      <PageWrapper>
-        <ResultPage />
-      </PageWrapper>
-    ),
+    element: <CombatPage />,
   },
   {
     path: '*',
     element: (
-      <PageWrapper>
+      <HomeLayout>
         <NotFoundPage />
-      </PageWrapper>
+      </HomeLayout>
     ),
   },
 ])

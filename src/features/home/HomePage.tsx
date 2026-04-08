@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router'
 import { Swords, BookOpen, GraduationCap } from 'lucide-react'
-import background from '../../assets/background.png'
 import { useTranslation } from 'react-i18next'
+import { toast } from 'sonner'
+import background from '@/assets/background.png'
 
 export default function HomePage() {
   const navigate = useNavigate()
@@ -29,7 +30,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-5 w-full">
             <button
               className="btn-primary-ghost w-full gap-3 py-3 text-lg"
-              onClick={() => navigate('/lobby')}
+              onClick={() => toast.success('Play mode coming soon!')}
             >
               <Swords className="w-5 h-5" />
               {t('home.play')}
@@ -37,7 +38,7 @@ export default function HomePage() {
 
             <button
               className="btn-primary-ghost w-full gap-3 py-3 text-lg"
-              onClick={() => navigate('/tutorial')}
+              onClick={() => toast.warning('Tutorial coming soon!')}
             >
               <BookOpen className="w-5 h-5" />
               {t('home.tutorial')}
