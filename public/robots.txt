@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /shop/
+Disallow: /battle/
+Disallow: /tutorial/
+Sitemap: https://kairos-game.fr/sitemap.xml
