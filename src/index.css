@@ -127,7 +127,7 @@
     @apply text-xs px-2 py-0.5 rounded font-accent bg-info text-on-info  border border-info/30;
   }
   .badge-warning {
-    @apply text-xs px-2 py-0.5 rounded font-accent bg-warning text-on-warning  border border-warning/30;
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-primary text-on-primary  border border-primary/30;
   }
 
   .divider {
