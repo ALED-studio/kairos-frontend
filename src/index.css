@@ -11,12 +11,12 @@
   --color-border: #4c5757;
   --color-border-focus: #687878;
 
-  --color-primary: #a78925;
-  --color-primary-hover: #c9a42c;
+  --color-primary: #b89000;
+  --color-primary-hover: #d0a300;
   --color-on-primary: #ffffff;
 
-  --color-secondary: #52297a;
-  --color-secondary-hover: #7038a8;
+  --color-secondary: #7038a8;
+  --color-secondary-hover: #7a3db8;
   --color-on-secondary: #ffffff;
 
   --color-success: #06755b;
@@ -26,6 +26,10 @@
   --color-danger: #7d1212;
   --color-danger-muted: #450a0a;
   --color-on-danger: #ffffff;
+
+  --color-info: #3e6eb6;
+  --color-info-muted: #2f5389;
+  --color-on-info: #ffffff;
 
   --font-display: 'Caesar Dressing', Georgia, serif;
   --font-body: 'EB Garamond', Georgia, serif;
@@ -62,7 +66,7 @@
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 cursor-pointer
-           px-5 py-2 rounded-md font-body font-semibold text-base
+           px-5 py-2 rounded-md font-accent text-base
            bg-primary text-on-primary hover:bg-primary-hover
            transition-colors duration-150
            disabled:opacity-40 disabled:cursor-not-allowed;
@@ -70,7 +74,7 @@
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 cursor-pointer
-           px-5 py-2 rounded-md font-body font-semibold text-base
+           px-5 py-2 rounded-md font-accent text-base
            bg-secondary text-on-secondary hover:bg-secondary-hover
            transition-colors duration-150
            disabled:opacity-40 disabled:cursor-not-allowed;
@@ -78,7 +82,7 @@
 
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 cursor-pointer
-           px-5 py-2 rounded-md font-body text-base
+           px-5 py-2 rounded-md font-accent text-base
             text-on-surface hover:text-on-surface-accent
             hover:bg-surface-raised
            transition-colors duration-150 disabled:cursor-not-allowed;
@@ -86,7 +90,7 @@
 
   .btn-primary-ghost {
     @apply inline-flex items-center justify-center gap-2 cursor-pointer
-           px-5 py-2 rounded-md font-body font-semibold text-base
+           px-5 py-2 rounded-md font-accent text-base
            bg-surface-raised text-primary border border-primary
            hover:bg-primary hover:text-on-primary
            transition-colors duration-150
@@ -95,7 +99,7 @@
 
   .btn-secondary-ghost {
     @apply inline-flex items-center justify-center gap-2 cursor-pointer
-           px-5 py-2 rounded-md font-body font-semibold text-base
+           px-5 py-2 rounded-md font-accent text-base
            bg-surface-raised text-secondary border border-secondary
            hover:bg-secondary hover:text-on-secondary
            transition-colors duration-150
@@ -118,6 +122,12 @@
   }
   .badge-danger {
     @apply text-xs px-2 py-0.5 rounded font-accent bg-danger text-on-danger  border border-danger/30;
+  }
+  .badge-info {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-info text-on-info  border border-info/30;
+  }
+  .badge-warning {
+    @apply text-xs px-2 py-0.5 rounded font-accent bg-warning text-on-warning  border border-warning/30;
   }
 
   .divider {
