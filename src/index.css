@@ -31,12 +31,53 @@
   --color-info-muted: #2f5389;
   --color-on-info: #ffffff;
 
+  --color-water: #016fb9;
+  --color-nature: #618b25;
+  --color-fire: #e55934;
+  --color-thunder: #f2c14e;
+  --color-shadow: #7f2982;
+  --color-light: #d6c88d;
+  --color-neutral: #817e9f;
+
+  --color-rarity-common: #9ca3af;
+  --color-rarity-uncommon: #4ade80;
+  --color-rarity-rare: #60a5fa;
+  --color-rarity-epic: #a78bfa;
+  --color-rarity-legendary: #fbbf24;
+
   --font-display: 'Caesar Dressing', Georgia, serif;
   --font-body: 'EB Garamond', Georgia, serif;
   --font-accent: 'Alegreya', Georgia, serif;
 }
 
+/*
+  --color-water: #016FB9;#2E86AB #3F88C5
+  --color-nature: #618B25;#899D78 #157F1F
+  --color-fire: #E55934;#F24236 #A31621
+  --color-thunder: #F2C14E;#FFBA08 #FFC759
+  --color-shadow: #7F2982;#FF01FB #8A1C7C
+  --color-light: #F0EEE9;#F0EBD8 #F1FAEE #d6c88d #cbbf8f
+  --color-neutral: #817E9F;#AEA4BF #857E7B
+*/
+
 @layer base {
+  :root {
+    --color-water: #016fb9;
+    --color-wind: #44bba4;
+    --color-earth: #a47864;
+    --color-nature: #618b25;
+    --color-fire: #e55934;
+    --color-thunder: #f2c14e;
+    --color-shadow: #7f2982;
+    --color-light: #d6c88d;
+    --color-neutral: #817e9f;
+    --color-rarity-common: #9ca3af;
+    --color-rarity-uncommon: #4ade80;
+    --color-rarity-rare: #60a5fa;
+    --color-rarity-epic: #a78bfa;
+    --color-rarity-legendary: #fbbf24;
+  }
+
   html {
     @apply bg-surface text-on-surface font-body antialiased;
   }
