@@ -10,6 +10,9 @@
   "actions": {
     "confirm": "Confirm",
     "cancel": "Cancel",
-    "back": "Back"
+    "back": "Back",
+    "search": "Search...",
+    "clear": "Clear",
+    "save": "Save"
   }
 }

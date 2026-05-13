@@ -1,1 +1,50 @@
-{}
+{
+  "Burn": {
+    "name": "Burn X",
+    "description": "At the end of your turn, deal X damage to this minion then divide X by 2 and round up."
+  },
+  "Frost": {
+    "name": "Frost X",
+    "description": "Attack is divided by 2 and rounded up. At the end of the turn, X diminshes by 1."
+  },
+  "Shock": {
+    "name": "Shock X",
+    "description": "Deal X damage before next attack then disappears."
+  },
+  "Bleed": {
+    "name": "Bleed X",
+    "description": "Take X more damage from any attack."
+  },
+  "Divine Shield": {
+    "name": "Divine Shield X",
+    "description": "The first time this minion takes damage, ignore it and diminish X by 1."
+  },
+  "Regeneration": {
+    "name": "Regeneration",
+    "description": "At the end of your turn, heal this minion for 1 then diminish X by 1. Health can't exceed its base health."
+  },
+  "Multistrike": {
+    "name": "Multistrike X",
+    "description": "This minion attacks X times."
+  },
+  "Valor": {
+    "name": "Valor X",
+    "description": "At the start of your turn, gain X Armor & 2X Damage then diminish X by 1."
+  },
+  "Vengeance": {
+    "name": "Vengeance X",
+    "description": "On every attack, gain X Attack"
+  },
+  "Frailty": {
+    "name": "Frailty X",
+    "description": "Any damage inflicted is reduced by 25% and rounded up. On damage inflicted, X diminishes by 1."
+  },
+  "Vulnerability": {
+    "name": "Vulnerability X",
+    "description": "Any damage received is augmented by 50% and rounded up. On damage received, X diminishes by 1."
+  },
+  "Lifesteal": {
+    "name": "Lifesteal X",
+    "description": "On everty attack, heal for damage dealt then diminish X by 1. Health can't exceed its base health."
+  }
+}

@@ -1,1 +1,50 @@
-{}
+{
+  "Burn": {
+    "name": "Brûlûre X",
+    "description": "A la fin du tour, inflige X points de dégâts à ce serviteur puis divise X par 2 et arrondit vers le haut."
+  },
+  "Frost": {
+    "name": "Gelûre X",
+    "description": "L'attaque est divisée par 2 et arrondie vers le haut. A la fin du tour, X diminue de 1."
+  },
+  "Shock": {
+    "name": "Choc X",
+    "description": "Inflige X points de dégâts avant la prochaine attaque puis disparaît."
+  },
+  "Bleed": {
+    "name": "Saignement X",
+    "description": "Subit X points de dégâts supplémentaires de toute attaque."
+  },
+  "Divine Shield": {
+    "name": "Bouclier divin X",
+    "description": " La première fois que ce serviteur subit des dégâts, les ignore et diminue X de 1."
+  },
+  "Regeneration": {
+    "name": "Régénération X",
+    "description": "A la fin du tour, soigne ce serviteur de X puis diminue X de 1. La santé ne peut pas dépasser sa santé de base."
+  },
+  "Multistrike": {
+    "name": "Attaque multiple X",
+    "description": "Ce serviteur attaque X fois."
+  },
+  "Valor": {
+    "name": "Vaillance X",
+    "description": "A la fin du tour, gagne X Armure & 2X Dégâts puis diminue X de 1."
+  },
+  "Vengeance": {
+    "name": "Vengeance X",
+    "description": "A chaque attaque reçue, gagne X Dégâts"
+  },
+  "Frailty": {
+    "name": "Faiblesse X",
+    "description": " Tout dégâts infligé est réduit de 25% et arrondi vers le haut. Lors de dégâts infligés, X diminue de 1."
+  },
+  "Vulnerability": {
+    "name": "Vulnerabilité X",
+    "description": " Tout dégâts reçu est augmenté de 50% et arrondi vers le haut. Lors de dégâts reçus, X diminue de 1."
+  },
+  "Lifesteal": {
+    "name": "Vol de vie X",
+    "description": "A chaque attaque, soigne pour les dégâts infligés puis diminue X de 1. La santé ne peut pas dépasser sa santé de base."
+  }
+}

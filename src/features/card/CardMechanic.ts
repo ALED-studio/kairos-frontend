@@ -1,0 +1,13 @@
+export type CardMechanic =
+  | 'Burn'
+  | 'Frost'
+  | 'Shock'
+  | 'Bleed'
+  | 'Divine Shield'
+  | 'Regeneration'
+  | 'Multistrike'
+  | 'Valor'
+  | 'Vengeance'
+  | 'Frailty'
+  | 'Vulnerability'
+  | 'Lifesteal'
