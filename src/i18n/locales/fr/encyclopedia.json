@@ -1,0 +1,9 @@
+{
+  "pageTitle": "Kairos · Encyclopédie",
+  "title": "Encyclopédie",
+  "description": "Toutes les cartes du jeu",
+  "loadingMessage": "Chargement des cartes...",
+  "errorMessage": "Les archives sont inaccessibles pour le moment. Veuillez réessayer plus tard.",
+  "nameAsc": "Nom (A-Z)",
+  "nameDesc": "Nom (Z-A)"
+}

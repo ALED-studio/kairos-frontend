@@ -1,0 +1,9 @@
+{
+  "pageTitle": "Kairos · Encyclopedia",
+  "title": "Encyclopedia",
+  "description": "All cards in the game",
+  "loadingMessage": "Loading cards...",
+  "errorMessage": "The archives are currently inaccessible. Please try again later.",
+  "nameAsc": "Name (A-Z)",
+  "nameDesc": "Name (Z-A)"
+}

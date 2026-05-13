@@ -2,10 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import HomePage from '@/features/home/HomePage'
 import NotFoundPage from '@/features/error/NotFoundPage'
 import HomeLayout from '@/features/home/HomeLayout'
+import EncyclopediaPage from './features/encyclopedia/EncyclopediaPage'
 
-const EncyclopediaPage = () => (
-  <div className="text-text  bg-background">Encyclopedia</div>
-)
 const CombatPage = () => <div className="text-text  bg-background">Combat</div>
 
 const router = createBrowserRouter([
